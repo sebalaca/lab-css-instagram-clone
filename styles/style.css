@@ -14,8 +14,8 @@ body {
 }
 
 body {
-  height: 100%;
-  background: linear-gradient(0deg, white 50%, #06365f 50%);
+  flex-grow:initial;
+  background: linear-gradient(0deg, white 70%, #06365f 30%);
 }
 
 .mainContainer {
@@ -28,9 +28,21 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 100%;
+  flex-grow: inherit;
+  height: auto;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.phonesImg {
+  display: flex;
+  flex-basis: auto;
+  height: auto;
+  max-width:fit-content;
+  min-width: none;
 }
 
 .subsection2 {
@@ -40,4 +52,86 @@ body {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  padding-left: 5%;
+}
+
+.logoIns-LogIn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%
+}
+
+.logInButton {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  background-image: linear-gradient(#5484ac, #376891 80%);
+  width: 110px;
+  height: 40px;
+  align-items: center;
+  border-radius: 3px;
+  margin-top: 15px;
+  border: 1px solid black;
+}
+
+.logInButton img {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+.logInButton p {
+  
+  font-weight: 600;
+}
+
+.contentText {
+  display: flex;
+  background-image: url("../images/frame.png");
+  background-repeat: no-repeat;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  max-width: 100%;
+}
+
+.mainTitle {
+  margin-left: 5%;
+}
+
+.paragraph {
+  margin-left: 5%;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 50px 150px 100px 150px; 
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color:#1c5380;
+}
+
+li {
+  padding: 10px;
+}
+
+.copy {
+  color: darkgrey;
 }
